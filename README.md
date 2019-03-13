@@ -78,9 +78,145 @@ onkeyup = function(evt){
 };
 ```
 
-```
+```js
+try {
+var pageTracker = _gat._getTracker("UA-597483-5");
+pageTracker._trackPageview();
+} catch(err) {}
 ```
 
-```
+```css
+* {
+  margin: 0;
+}
+
+body {
+  padding: 1em 5dm;
+  font: 1em/1.5em Futura, 'Century Gothic', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+hgroup > h1 {
+  font-size: 500%;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+hgroup > h2 {
+  font-size: 120%;
+}
+
+a {
+  text-decoration: none;
+  color: slategray;
+}
+
+div[role="main"] {
+  padding: 2em .5em;
+  counter-reset: demo;
+}
+
+div[role="main"]:after {
+  content: '',
+  display: block;
+  clear: both;
+}
+
+  a[data-property] {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 0 15px 30px;
+    background: slategray;
+    color: white;
+    font-size: 60px;
+    line-size: 60px;
+    line-height: 150px;
+    text-align: center;
+    counter-increment: demo;
+    outline-color: transparent;
+  }
+  
+  body.in-page a[data=property]:not(:target) {
+    opacity: .2 !important;
+  }
+  
+  #on-hover:checked ~ div[role="main"] > a[data-property]:not(:hover):not(:target),
+  body.in-page a[data-property]:not(:target) {
+    animation: none !important;
+  }
+  
+    a[data-property]:after {
+      content: attr(data-property);
+      position: absolute;
+      right: 0;
+      bottom: -1.2em;
+      z-index: 2;
+      color: slategray;
+      font-size: 14px;
+      line-height: 1;
+      text-indent: 0;
+      text-shadow: none;
+      letter-spacing: 0;
+    }
+    
+    a[data-property]:before {
+      content: counter(dome);
+    }
+
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  padding: .3em .7em;
+  border: 1px solid rgba(0,0,0,.3);
+  margin-top: 1em;
+  background: #809070;
+  color: white;
+  text-shadow: .05em .05dm .2em rgba(0,0,0,.8);
+  cursor: pointer;
+  border-radius: .3em;
+  box-shadow: 0 1px rgba(255,255,255,.6) inset;
+}
+
+input[type="radio"]:not(:checked) + label {
+  background-image: linear-gradient(rgba(255,255,255.3), rgba(255,255,255,0));
+}
+
+input[type="radio"]:checked + label {
+  back-shadow: .05em .05em .4em .1em rgba(0,0,0,.8) inset;
+}
+
+.in-page intput[type="radio"] + label {
+  display: none;
+}
+
+#info {
+  position: absolute;
+  z-index: 2;
+  width: 510px;
+  height: 150px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  overflow: black;
+  color: white;
+  text-align: left;
+  transition:.5s;
+}
+
+.home > #info {
+  display: none;
+}
+
+  #info h1 {
+    color
+  }
+
 ```
 
