@@ -217,6 +217,91 @@ input[type="radio"]:checked + label {
   #info h1 {
     color
   }
+  
+  #info > a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 2dm;
+    line-height: 2;
+    font-size: 80%;
+    background: rgba(255,255,255,.25);
+    color: black;
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+  }
+  
+  #info > a:hover {
+    background: #809070;
+  }
+  
+  #info > a [title="Previous"] {
+    right: 36px;
+    border-radius: 50% 0 0 50%;
+  }
+  
+  dl {
+    font-size: 80%;
+  }
+  
+  dl:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+    
+    dt {
+      float: left;
+      clear: left;
+      width: 6em;
+      color: gray;
+    }
+    
+    dd {
+      float: left;
+      clear: left;
+      width: 6em;
+      color: gray;
+    }
+    
+    dd {
+      float: left;
+      clear: left;
+      width: 6em;
+      color: gray;
+    }
+    
+    dd {
+      float: left;
+      clear: right;
+      white-space: nowrap;
+    }
+    
+      dd > a {
+        color: inherit;
+      }
+      
+        dd > a > img {
+          margin-right: 5px;
+          vertical-align: -8px;
+          border-radius: 12px;
+        }
+          dd > a > img {
+            margin-right: 5px;
+            vertical-align: -8px;
+            border-radius: 12px;
+          }
+ 
+.twitter-share-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
 
+.github-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 ```
 
